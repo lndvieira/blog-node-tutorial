@@ -1,0 +1,55 @@
+######## Objetivo criar um blog 
+
+a API deve conter 
+
+- CRUD usuários
+	GET user/:IDUSUARIO 
+	GET users?paginacao=1
+	POST users 
+	REMOVE user/:IDUSUARIO
+- CRUD posts  
+	GET post/:IDUSUARIO 
+	GET posts?paginacao=1
+	POST posts 
+	REMOVE post/:IDUSUARIO
+
+
+######## O front deve conter as seguintes paginas  
+
+	- /home (uma lista de todos os posts) 
+	- /visualizar_post/post_id ou post_title
+	- /novo_post
+	- /painel (uma lista de todos os posts com um botão para poder apagar ou visualizar o post)
+		- remover post (botão)
+		- visualizar post (botão que leva para a página visualizar_post/post_id)
+
+######## Utilizar na api 
+
+- Express 
+- Mongoose 
+
+######## No front utilize o que preferir (eu particularmente recomendo ou Vue.js ou Angular )
+
+######## Instalação 
+
+- npm install (esse comando vai instalar todos os modulos presentes no package.json)
+- quando instalar um modulo do node lembrar de usar "--save" para adicionar o modulo no package.json 
+
+######## Tarefas 
+
+1 - Organizar os arquivos separando por pastas abaixo um exemplo de organização (obs pode mudar os nomes)
+	server.js 
+		models/
+			usersModel.js
+			postModel.js
+		routes 
+			colocar todos os arquivos de rotas 
+			organizados por pasta 
+
+
+2 - entender como funcionam os parametros da url e como passa los para criar filtros "WHERE" pro mongo 
+3 - Criar os models para POST e USER 
+
+LEITURA quase obrigatória =P #################################################
+
+https://docs.mongodb.com/manual/crud/
